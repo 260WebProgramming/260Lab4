@@ -1,0 +1,28 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+
+body {
+    background-image:  url("images/backgroundlogo.png");
+    background-size: cover;
+}
+
+h1 {
+    color: #cb3a32;
+}
+
+.button {
+    border-radius: 25pt;
+    padding: 20px;
+}
+
+p {
+    color: #cb3a32;
+    font-size: x-large;
+}

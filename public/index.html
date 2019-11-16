@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>NBA Guessing</title>
+    </head>
+    
+    <body>
+        <h1>How well do you know the names and places of the NBA?</h1>
+        <div id="app">   
+            <Button class="button" v-on:click="guessNames()">Names</Button>
+            <Button class="button" v-on:click="guessCities()">Cities</Button>
+            <Button class="button" v-on:click="guessDivision()">Divisons</Button>
+            <Button class="button" v-on:click="guessConferences()">Conferences</Button>
+            
+            <br/>
+            
+            <p id="question"></p>
+            
+            <br/>
+            
+            <form id="submission" v-on:submit.prevent="onSubmit">
+                <input type="text" v-model="inputWord">
+                <input class="button" type="submit" name="guess"/>
+            </form>
+            
+            <br/>
+            
+            <p id="answer"></p>
+        </div>
+        
+        <br/>
+        
+        <div class="footer">
+            <p><a href="https://github.com/BYUCS260/lab-4-node-drowley4">Git Hub Link</a></p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
